@@ -1,0 +1,52 @@
+<mat-card style="background-color: rgb(250, 250, 250); height: 95%;">
+    
+    <h3 style="color: black; font-size: 0.8cm;"><u>Virtual Machine Registration</u></h3>
+
+    <br>
+
+    <mat-label style="color: black;">VM ID &nbsp;</mat-label>
+    <input style="width: 50%;" matInput placeholder=" ">
+
+    <br><br>
+
+    <mat-label style="color: black;">Password &nbsp;</mat-label>
+    <input type="password" matInput placeholder=" ">
+
+    <br><br>
+
+    <mat-label style="color: black;">Product &nbsp;</mat-label>
+    <select matNativeControl required>
+      <option value="product 1">option 1</option>
+      <option value="product 2">option 2</option>
+      <option value="product 3">option 3</option>
+      <option value="product 4">option 4</option>
+    </select>
+
+    <br><br>
+
+    <mat-label style="color: black;">Version &nbsp;</mat-label>
+      <select matNativeControl required>
+        <option value="version 1">option 1</option>
+        <option value="version 2">option 2</option>
+        <option value="version 3">option 3</option>
+        <option value="version 4">option 4</option>
+      </select>
+
+    <br><br>
+
+    <mat-label style="color: black;">Data Center&nbsp;</mat-label>
+    <select matNativeControl required>
+      <option value="DC 1">option 1</option>
+      <option value="DC 2">option 2</option>
+      <option value="DC 3">option 3</option>
+     
+    </select>
+    <br><br>
+
+<mat-label style="color: black;">Registered Date &nbsp;</mat-label>
+<input [matDatepicker]="Datepicker" placeholder="Choose a date">
+<mat-datepicker-toggle style="color: black;" [for]="Datepicker"></mat-datepicker-toggle>
+<mat-datepicker #Datepicker></mat-datepicker>
+
+    
+</mat-card>

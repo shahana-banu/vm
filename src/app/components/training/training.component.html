@@ -1,0 +1,41 @@
+<mat-card style="background-color: white;  margin: 5%;">
+
+    <h3 style="color: black; font-size: 0.8cm;"><u>Training Event Registration</u></h3>
+
+    <br>
+    
+    <mat-label style="color: black;">User ID  </mat-label><br>
+    <input style="color: black;" matInput placeholder=" " [formControl]="userFormControl"
+           [errorStateMatcher]="matcher" ><br>
+   
+    
+    <mat-error *ngIf="userFormControl.hasError('required')">
+      Required*
+    </mat-error>
+
+    <br><br>
+
+    <mat-label style="color: black;">Training Type  </mat-label><br>
+    <input style="width: 80%;" matInput placeholder=" ">
+
+    <br><br>
+
+    <mat-label style="color: black;">Location  </mat-label><br>
+    <input style="width: 80%;" matInput placeholder=" ">
+
+    <br><br>
+
+    <mat-label style="color: black;">Start Date &nbsp;</mat-label>
+<input [matDatepicker]="Datepicker1" placeholder="Choose a date">
+<mat-datepicker-toggle style="color: black;" [for]="Datepicker1"></mat-datepicker-toggle>
+<mat-datepicker #Datepicker1></mat-datepicker>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<mat-label style="color: black;">End Date &nbsp;</mat-label>
+<input [matDatepicker]="Datepicker2" placeholder="Choose a date">
+<mat-datepicker-toggle style="color: black;" [for]="Datepicker2"></mat-datepicker-toggle>
+<mat-datepicker #Datepicker2></mat-datepicker>
+  
+    
+</mat-card>
