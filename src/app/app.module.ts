@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MatToolbarModule,MatFormFieldModule,MatMenuModule,MatIconModule,MatExpansionModule,MatSidenavModule,MatListModule,MatButtonModule,MatCardModule,MatDatepickerModule,MatSelectModule,MatNativeDateModule,MatInputModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from "@angular/common/http";
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +32,8 @@ import { from } from 'rxjs';
     TrainerComponent,
     VM_RegComponent,
     ReportComponent,
-    ProfileComponent
+    ProfileComponent,
+    
   
   ],
 
@@ -56,10 +59,12 @@ import { from } from 'rxjs';
     MatNativeDateModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,
+             ]
 })
 export class AppModule { }
